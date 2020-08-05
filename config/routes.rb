@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  root 'application#hello'
+  resources :ruby_win_sources
+  resources :microposts
+  resources :users
+  root 'users#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
